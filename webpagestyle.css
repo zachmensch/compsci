@@ -1,0 +1,57 @@
+.home {
+    background-color: rgb(94, 133, 216);
+    
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: normal;
+    padding: 50px;
+
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    left: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.dance {
+    background-image: url("9beec64d65bea6a1e90ad9767931f9d7.gif");
+    background-size: 1920px 1080px;
+}

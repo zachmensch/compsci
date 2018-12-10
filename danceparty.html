@@ -1,0 +1,81 @@
+<!DOCTYPE <!DOCTYPE <!DOCTYPE html>
+
+<html class="dance">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dance Party</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="webpagestyle.css" />
+</head>
+
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="page2.html">Sixx</a></li>
+    <li><a href="page3.html">Code</a></li>
+    <li><a href="page4.html">Elon Musk</a></li>
+    <li><a href="danceparty.html">Dance Party</a></li>
+</ul>
+
+<h1 class="colorfade">
+    <b>
+        <font color="#ff0000"size="10">D</font>
+        <font color="#ff5500"size="10">A</font>
+        <font color="#ffff00"size="10">N</font>
+        <font color="#2aff00"size="10">C</font>
+        <font color="#00ffd4"size="10">E</font>
+        <font color="#0055ff"size="10">P</font>
+        <font color="#aa00ff"size="10">A</font>
+        <font color="#8800cc"size="10">R</font>
+        <font color="#ff00aa"size="10">T</font>
+        <font color="#ff00ff"size="10">Y</font>
+    </b>
+</h1>
+
+<body align="center">
+
+    <embed src="Earth, Wind & Fire - September.mp3" autostart="true" loop="true" width="2" height="0"></embed>
+
+</body>
+
+<img src="tenor.gif" hspace="30"> <img src="SpiritedBlueAmericanalligator-max-1mb.gif" hspace="30"> 
+<img src="giphy.gif" hspace="30" style="width: 300px; height: 300"> <img src="source.gif" style="width: 270px;height: 300px;align-content: center">
+
+<footer>
+
+    <article>
+
+      <div id="clockbox"></div>
+    
+      <script type="text/javascript">
+      
+      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    
+      function GetClock(){
+      var d=new Date();
+      var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+      var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+      if(nhour==0){ap=" AM";nhour=12;}
+      else if(nhour<12){ap=" AM";}
+      else if(nhour==12){ap=" PM";}
+      else if(nhour>12){ap=" PM";nhour-=12;}
+    
+      if(nmin<=9) nmin="0"+nmin;
+    
+      var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+      document.getElementById('clockbox').innerHTML=clocktext;
+      }
+    
+      GetClock();
+      setInterval(GetClock,1000);
+      </script>
+
+    </article>
+
+</footer>
+
+
+
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE <!DOCTYPE <!DOCTYPE html>
+
+<html class="home">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="webpagestyle.css" />
+    <script src="main.js"></script>
+</head>
+
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="page2.html">Sixx</a></li>
+    <li><a href="page3.html">Code</a></li>
+    <li><a href="page4.html">Elon Musk</a></li>
+    <li><a href="danceparty.html">Dance Party</a></li>
+</ul>
+
+<body align="center">
+
+    <h1>
+    My Favourite Elon Musk Tweets
+    </h1>
+    <h2>
+    *These are all real tweets*
+    </h2>
+
+    <img src="elongod.png" style="width: 600px; height: 400px" hspace="5px" alt="Elon Musk Discussing Society's Hypocrasy"><img src="elonanime.jpg" style="width: 600px; height: 400px" hpsace="5px" alt="Elon Musk Expressing His Enjoyment of Japanese Cartoons">
+    <br>
+    <img src="elonbitcoin.png" style="width: 600px; height: 650px" hpspace="5px" alt="Elon Musk Discussing Digital Currencies"> <img src="elondig.png" style="width: 600px; height: 650px" hpsace="5px" alt="Elon Musk Coming Up With The Idea of The Boring Company">
+    
+    <br>
+    <br>
+    <br>
+
+    <p>
+        <a href="https://twitter.com/elonmusk/status/152599413813018624?lang=en">First Tweet</a>
+        <a href="https://twitter.com/elonmusk/status/1054501056229588992?lang=en">Second Tweet</a>
+        <a href="https://twitter.com/elonmusk/status/1054520588734058496?lang=en">Third Tweet</a>
+        <a href="https://twitter.com/elonmusk/status/810108760010043392">Fourth Tweet</a>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+<footer>
+
+    <article>
+        
+      <div id="clockbox"></div>
+    
+      <script type="text/javascript">
+      
+      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    
+      function GetClock(){
+      var d=new Date();
+      var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+      var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+      if(nhour==0){ap=" AM";nhour=12;}
+      else if(nhour<12){ap=" AM";}
+      else if(nhour==12){ap=" PM";}
+      else if(nhour>12){ap=" PM";nhour-=12;}
+    
+      if(nmin<=9) nmin="0"+nmin;
+    
+      var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+      document.getElementById('clockbox').innerHTML=clocktext;
+      }
+    
+      GetClock();
+      setInterval(GetClock,1000);
+      </script>
+
+    </article>
+
+</footer>
+
+</html>
